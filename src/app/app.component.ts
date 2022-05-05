@@ -6,5 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'vBases';
+  title = 'Contador App';
+   contador:number=10;
+  base:number=5;
+
+
+  sumar(){
+    this.contador=this.contador+1;
+  }
+
+  restar(){
+    this.contador -=1;
+  }
+
+  acumulador(valor:number){
+    this.contador+=valor;
+  
+  }
+
 }
+
+
